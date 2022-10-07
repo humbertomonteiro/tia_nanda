@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mali', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    align-items: center;
+    font-weight: 300;
+}
+
+.logo {
+    margin-left: 20px;
+    width: 100px;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0 0.8em;
+    font-weight: bolder;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 0.5em;
+}
+
+.principal {
+    height: 533px;
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(219, 245, 253);
+}
+
+.cont-principal {
+    margin: 0 2.5em;
+}
+
+.principal-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.principal h1 {
+    line-height: 100px;
+    font-size: 5em;
+    max-width: 700px;
+    position: relative;
+    margin-right: -800px;
+}
+
+.principal h1, h2 {
+    font-weight: lighter;
+    color: white;
+    text-shadow: 3px 3px 6px rgb(0, 0, 0);
+}
+
+.principal img {
+    width: 800px;
+    border-radius: 250px 0 0 250px;
+}
+
+.btn {
+    background-color: #00ADA3;
+    color: white;
+    border-color: rgb(178, 164, 255);
+    border-radius: 8px;
+    padding:  0.5em 1em;
+    margin: 3em 2em;
+    font-size: 1em;
+    box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.363);
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    background-color: #008a83;
+    border-color: black;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(252, 244, 252);
+}
+
+.cont {
+    font-size: 1.5em;
+    padding: 2em 0;
+}
+
+.cont h1 {
+    font-size: 2em;
+    color: blueviolet;
+}
+
+.sub-cont {
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.flex .card img {
+    width: 230px;
+}
+
+.conteudo2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1.3em;
+    font-weight: bolder;
+}
+
+.conteudo2 img {
+    width: 300px;
+}
+
+.box {
+    width: 450px;
+}
+
+.sobrepor {
+    position: relative;
+    margin-top: -6px;
+    border-radius: 0 0 10px 10px;
+}
+
+.sobrepor h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.cor1 {
+    background-color: rgba(85, 228, 145, 0.823);
+}
+
+.cor2 {
+    background-color: rgba(201, 145, 253, 0.823);
+}
+
+.cor3 {
+    background-color: rgba(253, 122, 236, 0.823);
+}
+
+.cor4 {
+    background-color: rgba(120, 194, 228, 0.823);
+}
+
+.card img {
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+
+@media (max-width: 1139px) {
+    .principal {
+        background-image: url(../img/fundo.jpg);
+        background-size: cover;
+    }
+
+    .principal-flex {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .principal h1 {
+        position: relative;
+        margin-right: 0;
+    }
+
+    .principal img {
+        display: none;
+    }
+}
+
+@media (max-width: 953px) {
+
+    .box {
+        margin: auto;
+        text-align: center;
+    }
+
+    .conteudo2 img {
+        margin-top: 2em;
+    }
+
+    .cont2-img {
+        margin: auto;
+    }
+}
