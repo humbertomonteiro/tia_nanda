@@ -34,7 +34,7 @@ a {
 .nav-item {
     list-style: none;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-weight: bolder;
     transition: .5s;
 }
@@ -46,6 +46,15 @@ a {
 .nav-link {
     font-weight: bolder;
     padding: 0.5em;
+    color: black;
+}
+
+.nav-toggle {
+    font-size: 1.5em;
+    color: #018b857e;
+    padding: 1px 5px;
+    border: 1px solid #018b857e;
+    border-radius: 5px;
 }
 
 .principal {
@@ -80,8 +89,8 @@ a {
 
 .btn {
     background-color: rgb(85, 228, 145);
-    border: .5px solid black;
     color: white;
+    border: .5px solid white;
     border-radius: 8px;
     padding:  0.6em 1.5em;
     margin: 2.5em 1em;
@@ -91,7 +100,8 @@ a {
 }
 
 .btn:hover {
-    background-color: rgb(44, 221, 118);
+    background-color: rgb(78, 219, 137);
+    color: black;
 }
 
 .container {
@@ -146,11 +156,13 @@ a {
 
 .card {
     text-align: center;
+    margin-top: .5em;
     padding-top: .5em;
 }
 
 .card img {
     width: 230px;
+    border-radius: 10px 10px 0 0;
 }
 
 .sobrepor {
@@ -258,6 +270,9 @@ a {
 
 @media(max-width: 768px) {
 
+    .principal h1, h2 {
+        margin-left: 0;
+    }
     .principal {
         text-align: center;
         height: 400px;
