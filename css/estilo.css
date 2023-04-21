@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap');
 
 :root {
-    --color-1: #5F0875;
-    --color-2: #D75BF7;
-    --color-3: #C711F5;
-    --color-4: #610E75;
-    --color-5: #9E0EC2;
+    --color-1: #8d57de;
+    --color-2: #7a46cb;
+    --color-3: #6634b9;
+    --color-4: #5323a6;
+    --color-5: #3f1193;
 }
 
 * {
@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: linear-gradient( to left, var(--color-4), var(--color-1));
+    background-image: linear-gradient( to left, var(--color-5), var(--color-3));
 
 }
 
@@ -74,7 +74,7 @@ header .btn-top a {
     padding: 10px;
     border-radius: 10px;
     font-size: 20px;
-    color: var(--color-1);
+    color: var(--color-5);
     border: 0;
     font-weight: bold;
     background-color: white;
@@ -86,7 +86,7 @@ header .btn-top a {
 }
 
 header .btn-top a:hover {
-    background-color: var(--color-1);
+    background-color: var(--color-5);
     color: white;
 }
 
@@ -151,7 +151,7 @@ main .container-content
 
 main .container-content 
 .content-text h1 span {
-    color: var(--color-2);
+    color: var(--color-5);
     font-size: 4rem;
     font-family: 'Work Sans', sans-serif;
     line-height: 50px;
@@ -299,7 +299,7 @@ main .container-img img {
 
 
 .show-toggle {
-    background-color: #600e75e5;
+    background-color: #3e1193d7;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
