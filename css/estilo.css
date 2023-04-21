@@ -38,16 +38,26 @@ header .logo img {
 
 }
 
-header .links {
-    width: 533px;
+header .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+header .links {
+    min-width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-right: 2rem;
 }
 
 header .links a {
     text-decoration: none;
     color: white;
     padding: 10px;
+    margin: 0 5px;
     border-radius: 10px;
     transition: .5s;
     opacity: 0;
@@ -59,9 +69,9 @@ header .links a:hover {
     background-color: var(--color-5);
 }
 
-header .btn-top button {
-    width: 200px;
-    height: 55px;
+header .btn-top a {
+    text-decoration: none;
+    padding: 10px;
     border-radius: 10px;
     font-size: 20px;
     color: var(--color-1);
@@ -75,16 +85,17 @@ header .btn-top button {
     animation: slideXLeft .8s ease forwards;
 }
 
-header .btn-top button:hover {
+header .btn-top a:hover {
     background-color: var(--color-1);
     color: white;
 }
 
 header .btn-toggle {
     display: none;
-    padding: 15px;
+    padding:  5px 10px;
+    margin-right: 1.5rem;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 25px;
     transition: .5s;
     opacity: 0;
@@ -93,7 +104,7 @@ header .btn-toggle {
 }
 
 header .btn-toggle:hover {
-    background-color: var(--color-2);
+    background-color: var(--color-5);
 }
 
 main {
@@ -163,6 +174,7 @@ main .content-btn {
 }
 
 main .content-btn .whatsapp {
+    text-decoration: none;
     grid-column-start: 1;
     grid-column-end: 4;
     width: 483px;
@@ -285,6 +297,37 @@ main .container-img img {
 }
 
 
+
+.show-toggle {
+    background-color: #600e75e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    top: 60px;
+    height: 80vh;
+    width: fit-content;
+    border-radius: 5px 0 0 5px;
+}
+
+.show-toggle .links {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    position: relative;
+    right: -30px;
+}
+
+.show-toggle .btn-top {
+    margin: 0 10px;
+}
+
+
 @media (max-width: 1150px) {
 
     main .container-img img {
@@ -350,12 +393,25 @@ main .container-img img {
     }
 }
 
-@media (max-width: 750px) {
-    header .links {
+@media (min-width: 750px) {
+    .show-toggle {
         display: none;
     }
 
-    header .btn-top {
+    header .navbar {
+        display: flex;
+    }
+}
+
+@media (max-width: 750px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 18px;
+    }
+
+    header .navbar {
         display: none;
     }
 
@@ -369,12 +425,6 @@ main .container-img img {
 }
 
 @media (max-width: 550px) {
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 18px;
-    }
 
     header .logo img {
         width: 3rem;
