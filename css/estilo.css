@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap');
 
 :root {
-    --color-1: #8d57de;
-    --color-2: #7a46cb;
-    --color-3: #6634b9;
-    --color-4: #5323a6;
-    --color-5: #3f1193;
+    --color-1: #500A5E;
+    --color-2: #AE15CC;
+    --color-3: #73347F;
+    --color-4: #D91BFF;
+    --color-5: #E667FF;
 }
 
 * {
@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: linear-gradient( to left, var(--color-5), var(--color-3));
+    background-image: linear-gradient( to left, var(--color-3), var(--color-1));
 
 }
 
@@ -66,7 +66,7 @@ header .links a {
 }
 
 header .links a:hover {
-    background-color: var(--color-5);
+    background-color: var(--color-3);
 }
 
 header .btn-top a {
@@ -74,7 +74,7 @@ header .btn-top a {
     padding: 10px;
     border-radius: 10px;
     font-size: 20px;
-    color: var(--color-5);
+    color: var(--color-1);
     border: 0;
     font-weight: bold;
     background-color: white;
@@ -86,7 +86,7 @@ header .btn-top a {
 }
 
 header .btn-top a:hover {
-    background-color: var(--color-5);
+    background-color: var(--color-1);
     color: white;
 }
 
@@ -104,7 +104,7 @@ header .btn-toggle {
 }
 
 header .btn-toggle:hover {
-    background-color: var(--color-5);
+    background-color: var(--color-1);
 }
 
 main {
@@ -151,7 +151,7 @@ main .container-content
 
 main .container-content 
 .content-text h1 span {
-    color: var(--color-5);
+    color: var(--color-2);
     font-size: 4rem;
     font-family: 'Work Sans', sans-serif;
     line-height: 50px;
@@ -182,7 +182,7 @@ main .content-btn .whatsapp {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-4);
+    background-color: var(--color-1);
     padding: 0 10px;
     border-radius: 50px;
     border: 1px solid white;
@@ -197,7 +197,7 @@ main .content-btn .whatsapp {
 }
 
 main .content-btn .whatsapp:hover {
-    background-color: var(--color-5);
+    background-color: var(--color-3);
 }
 
 main .content-btn .btn-icon {
@@ -205,14 +205,14 @@ main .content-btn .btn-icon {
     height: 57px;
     border-radius: 50%;
     border: 1px solid white;
-    background-color: var(--color-4);
+    background-color: var(--color-1);
     box-shadow: -5px 4px 2px rgba(0, 0, 0, 0.301);
     cursor: pointer;
     transition: .3s;
 }
 
 main .content-btn .btn-icon:hover {
-    background-color: var(--color-5);
+    background-color: var(--color-3);
     color: var(--color-1);
 }
 
@@ -252,7 +252,7 @@ main .container-img img {
     max-width: 99%;
     padding: 30px;
     border-radius: 5px;
-    background-color: var(--color-5);
+    background-color: var(--color-3);
 }
 
 .about .about-text h1 {
@@ -289,7 +289,7 @@ main .container-img img {
 }
 
 .btn-close button:hover {
-    background-color: var(--color-4);
+    background-color: var(--color-1);
 }
 
 .btn-close button i {
@@ -299,7 +299,7 @@ main .container-img img {
 
 
 .show-toggle {
-    background-color: #3e1193d7;
+    background-color: #500a5ed7;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
