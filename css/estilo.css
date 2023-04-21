@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap');
 
 :root {
-    --color-1: #7e318a;
-    --color-2: #820e94;
-    --color-3: #f6d9fa;
-    --color-4: #e100ff;
+    --color-1: #5F0875;
+    --color-2: #D75BF7;
+    --color-3: #C711F5;
+    --color-4: #610E75;
+    --color-5: #9E0EC2;
 }
 
 * {
@@ -18,7 +19,7 @@
 }
 
 body {
-    background-image: linear-gradient( 108.7deg,  rgb(167, 14, 170) 11%, rgba(111,22,190,1) 88.2% );
+    background-image: linear-gradient( to left, var(--color-4), var(--color-1));
 
 }
 
@@ -46,7 +47,6 @@ header .links {
 header .links a {
     text-decoration: none;
     color: white;
-    background-color: var(--color-2);
     padding: 10px;
     border-radius: 10px;
     transition: .5s;
@@ -56,7 +56,7 @@ header .links a {
 }
 
 header .links a:hover {
-    background-color: var(--color-1);
+    background-color: var(--color-5);
 }
 
 header .btn-top button {
@@ -76,7 +76,7 @@ header .btn-top button {
 }
 
 header .btn-top button:hover {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     color: white;
 }
 
@@ -98,8 +98,9 @@ header .btn-toggle:hover {
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 1.5rem;
 }
 
 main .container-content {
@@ -142,7 +143,7 @@ main .container-content
     color: var(--color-2);
     font-size: 4rem;
     font-family: 'Work Sans', sans-serif;
-    text-shadow: -1px 1px 2px white;
+    line-height: 50px;
 }
 
 main .container-content 
@@ -169,12 +170,12 @@ main .content-btn .whatsapp {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-2);
+    background-color: var(--color-4);
     padding: 0 10px;
     border-radius: 50px;
     border: 1px solid white;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 1rem;
     box-shadow: -5px 4px 2px rgba(0, 0, 0, 0.301);
     cursor: pointer;
     transition: .5s;
@@ -184,7 +185,7 @@ main .content-btn .whatsapp {
 }
 
 main .content-btn .whatsapp:hover {
-    background-color: var(--color-1);
+    background-color: var(--color-5);
 }
 
 main .content-btn .btn-icon {
@@ -192,14 +193,14 @@ main .content-btn .btn-icon {
     height: 57px;
     border-radius: 50%;
     border: 1px solid white;
-    background-color: var(--color-2);
+    background-color: var(--color-4);
     box-shadow: -5px 4px 2px rgba(0, 0, 0, 0.301);
     cursor: pointer;
     transition: .3s;
 }
 
 main .content-btn .btn-icon:hover {
-    background-color: var(--color-1);
+    background-color: var(--color-5);
     color: var(--color-1);
 }
 
@@ -225,6 +226,65 @@ main .container-img img {
 }
 
 
+
+
+/* about */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.about .about-text {
+    max-width: 99%;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--color-5);
+}
+
+.about .about-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about .about-text p {
+    margin-bottom: 1rem;
+    text-indent: 40px;
+}
+
+.about .about-text p span {
+    font-size: 1.5rem;
+    color: var(--color-1);
+}
+
+
+/* btn close */
+
+.btn-close {
+    position: absolute;
+    right: 10%;
+}
+
+.btn-close button {
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    transition: .5s;
+}
+
+.btn-close button:hover {
+    background-color: var(--color-4);
+}
+
+.btn-close button i {
+    font-size: 1.5rem;
+}
+
+
 @media (max-width: 1150px) {
 
     main .container-img img {
@@ -233,7 +293,7 @@ main .container-img img {
     }
 
     main .container-content {
-        width: 40%;
+        width: 50%;
     }
 
     main .content-btn .whatsapp {
@@ -258,7 +318,7 @@ main .container-img img {
 
     main .container-content 
     .content-text h1 {
-        font-size: 40px;
+        font-size: 2rem;
     }
 
     main .container-content 
@@ -275,8 +335,7 @@ main .container-img img {
 
     
     main .container-content {
-        width: 85%;
-        margin-left: 5%;
+        width: 99%;
     }
 
     main .container-content 
@@ -309,6 +368,27 @@ main .container-img img {
     }
 }
 
+@media (max-width: 550px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 18px;
+    }
+
+    header .logo img {
+        width: 3rem;
+        height: 3.2rem;
+    }
+
+    main .container-content {
+        width: 98%;
+    }
+
+    main .container-content .content-text {
+        text-align: center;
+    }
+}
 
 
 @keyframes slideYBottom {
