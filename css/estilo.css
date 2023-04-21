@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: linear-gradient( to left, var(--color-3), var(--color-1));
+    background-image: linear-gradient( to left, var(--color-3), var(--color-2));
 
 }
 
@@ -152,7 +152,7 @@ main .container-content
 
 main .container-content 
 .content-text h1 span {
-    color: var(--color-3);
+    color: var(--color-5);
     font-size: 4rem;
     font-family: 'Work Sans', sans-serif;
     line-height: 50px;
@@ -197,10 +197,6 @@ main .content-btn .whatsapp {
     animation-delay: 3.5s;
 }
 
-main .content-btn .whatsapp:hover {
-    background-color: var(--color-3);
-}
-
 main .content-btn .btn-icon {
     width: 57px;
     height: 57px;
@@ -212,9 +208,9 @@ main .content-btn .btn-icon {
     transition: .3s;
 }
 
-main .content-btn .btn-icon:hover {
+main .content-btn .btn-icon:hover,
+main .content-btn .whatsapp:hover {
     background-color: var(--color-3);
-    color: var(--color-1);
 }
 
 main .content-btn button {
@@ -300,7 +296,7 @@ main .container-img img {
 
 
 .show-toggle {
-    background-color: #30074bd3;
+    background-color: #30074bcc;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
