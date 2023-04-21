@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap');
 
 :root {
-    --color-1: #933BA1;
+    --color-1: #7e318a;
     --color-2: #820e94;
     --color-3: #f6d9fa;
     --color-4: #e100ff;
@@ -17,7 +18,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, var(--color-1), var(--color-2));
+    background-image: linear-gradient( 108.7deg,  rgb(167, 14, 170) 11%, rgba(111,22,190,1) 88.2% );
 
 }
 
@@ -45,6 +46,7 @@ header .links {
 header .links a {
     text-decoration: none;
     color: white;
+    background-color: var(--color-2);
     padding: 10px;
     border-radius: 10px;
     transition: .5s;
@@ -54,7 +56,7 @@ header .links a {
 }
 
 header .links a:hover {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
 }
 
 header .btn-top button {
@@ -64,6 +66,7 @@ header .btn-top button {
     font-size: 20px;
     color: var(--color-1);
     border: 0;
+    font-weight: bold;
     background-color: white;
     box-shadow: -5px 4px 2px rgba(0, 0, 0, 0.301);
     transition: .5s;
@@ -73,7 +76,8 @@ header .btn-top button {
 }
 
 header .btn-top button:hover {
-    background-color: var(--color-3);
+    background-color: var(--color-2);
+    color: white;
 }
 
 header .btn-toggle {
@@ -94,14 +98,15 @@ header .btn-toggle:hover {
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 main .container-content {
     width: 619px;
-    margin-top: 50px;
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main .container-content 
@@ -111,8 +116,7 @@ main .container-content
 
 main .container-content 
 .content-text .name {
-    font-size: 60px;
-    margin-bottom: 5px;
+    font-size: 2.5rem;
     font-family: 'Great Vibes', cursive;
     opacity: 0;
     animation: slideXRight .8s ease forwards;
@@ -127,8 +131,7 @@ main .container-content
 
 main .container-content 
 .content-text h1 {
-    font-size: 50px;
-    text-shadow: -4px 4px 2px rgba(0, 0, 0, 0.301);
+    font-size: 3.7rem;
     opacity: 0;
     animation: slideXLeft .8s ease forwards;
     animation-delay: 1.7s;
@@ -136,8 +139,10 @@ main .container-content
 
 main .container-content 
 .content-text h1 span {
-    color: var(--color-4);
-    font-size: 3rem;
+    color: var(--color-2);
+    font-size: 4rem;
+    font-family: 'Work Sans', sans-serif;
+    text-shadow: -1px 1px 2px white;
 }
 
 main .container-content 
@@ -161,16 +166,15 @@ main .content-btn .whatsapp {
     grid-column-end: 4;
     width: 483px;
     height: 57px;
-    padding: 0 10px;
-    border-radius: 50px;
-    border: 1px solid var(--color-1);
-    background-color: white;
-    color: var(--color-1);
-    margin-bottom: 20px;
-    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--color-2);
+    padding: 0 10px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    font-size: 20px;
     box-shadow: -5px 4px 2px rgba(0, 0, 0, 0.301);
     cursor: pointer;
     transition: .5s;
@@ -179,19 +183,8 @@ main .content-btn .whatsapp {
     animation-delay: 3.5s;
 }
 
-main .content-btn .btn-icon:hover {
-    background-color: var(--color-2);
-    color: var(--color-1);
-}
-
-main .content-btn .whatsapp i {
-    font-size: 35px;
-    margin-right: 10px;
-    color: var(--color-1);
-}
-
 main .content-btn .whatsapp:hover {
-    background-color: var(--color-3);
+    background-color: var(--color-1);
 }
 
 main .content-btn .btn-icon {
@@ -199,13 +192,14 @@ main .content-btn .btn-icon {
     height: 57px;
     border-radius: 50%;
     border: 1px solid white;
-    background-color: var(--color-1);
+    background-color: var(--color-2);
     box-shadow: -5px 4px 2px rgba(0, 0, 0, 0.301);
     cursor: pointer;
     transition: .3s;
 }
 
 main .content-btn .btn-icon:hover {
+    background-color: var(--color-1);
     color: var(--color-1);
 }
 
@@ -219,23 +213,23 @@ main .content-btn .btn-icon i {
     font-size: 25px;
 }
 
-
-
 main .container-img img {
-    width: 575px;
-    position: absolute;
-    top: 90px;
+    width: 595px;
+    position: fixed;
     right: 0;
+    bottom: 0;
     z-index: -1;
     opacity: 0;
     animation: slideXLeft 1s ease forwards;
     animation-delay: 2s;
 }
 
+
 @media (max-width: 1150px) {
 
     main .container-img img {
         width: 600px;
+        bottom: 0;
     }
 
     main .container-content {
@@ -251,7 +245,7 @@ main .container-img img {
     }
 
     header .btn-top button {
-        width: 130px;
+        width: 170px;
         height: 40px;
         font-size: 18px;
     }
@@ -274,14 +268,25 @@ main .container-img img {
 
 }
     
-@media (max-width: 870px) {
+@media (max-width: 970px) {
     main .container-img img {
-        width: 500px;
-        top: 160px;
+        display: none;
+    }
+
+    
+    main .container-content {
+        width: 85%;
+        margin-left: 5%;
     }
 
     main .container-content 
     .content-text h1 {
+        font-size: 1.7rem;
+    }
+
+    
+    main .container-content 
+    .content-text h1 span {
         font-size: 2rem;
     }
 }
@@ -298,42 +303,13 @@ main .container-img img {
     header .btn-toggle {
         display: block;
     }
-    
-
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main .container-content {
-        margin-left: auto;
-    }
-
-    main .container-img img {
-        display: none;
-    }
-
-    main .container-content {
-        width: 85%;
-    }
 
     main .content-btn {
         margin-top: 50px;
     }
 }
 
-@media (max-width: 750px) {
 
-    main .container-content {
-        margin-top: 0;
-        margin-left: 0;
-    }
-    
-    main .content-btn .whatsapp {
-        width: 85%;
-    }
-}
 
 @keyframes slideYBottom {
     0% {
