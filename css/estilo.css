@@ -60,13 +60,13 @@ header .links {
 header .links a {
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 8px;
     margin: 0 5px;
     border-radius: 10px;
     transition: .5s;
     opacity: 0;
     animation: slideYBottom 0.8s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.1s * var(--i));
 }
 
 header .links a:hover {
@@ -77,7 +77,7 @@ header .btn-top a {
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1rem;
     color: var(--color-1);
     border: 0;
     font-weight: bold;
@@ -141,16 +141,6 @@ main .container-content
     text-align: center;
 }
 
-/* main .container-content 
-.content-text .name {
-    font-size: 2.5rem;
-    margin-bottom: -10px;
-    font-family: 'Great Vibes', cursive;
-    opacity: 0;
-    animation: slideXRight .8s ease forwards;
-    animation-delay: 1.7s;
-} */
-
 main .container-content 
 .content-text .name i {
     font-size: 25px;
@@ -163,24 +153,24 @@ main .container-content
     color: var(--color-5);
     font-family: 'Poppins', sans-serif;
     opacity: 0;
-    animation: slideXRight .8s ease forwards;
-    animation-delay: 1.5s;
+    animation: slideXRight .7s ease forwards;
+    animation-delay: .8s;
 }
 
 main .container-content 
 .content-text h2 {
     font-size: 2rem;
     opacity: 0;
-    animation: slideXLeft .8s ease forwards;
-    animation-delay: 1.5s;
+    animation: slideXLeft .7s ease forwards;
+    animation-delay: .8s;
 }
 
 main .container-content 
 .content-text p {
     margin-top: 20px;
     opacity: 0;
-    animation: slideXRight .8s ease forwards;
-    animation-delay: 1.5s;
+    animation: slideXRight .7s ease forwards;
+    animation-delay: .8s;
 }
 
 main .content-btn {
@@ -211,7 +201,7 @@ main .content-btn .whatsapp {
     transition: .5s;
     opacity: 0;
     animation: slideYTop 0.8s ease forwards;
-    animation-delay: 3s;
+    animation-delay: 1.5s;
 }
 
 main .content-btn .btn-icon {
@@ -222,7 +212,7 @@ main .content-btn .btn-icon {
     background-color: var(--color-2);
     box-shadow: -5px 4px 2px rgba(0, 0, 0, 0.301);
     cursor: pointer;
-    transition: 2.5s;
+    transition: 2.3s;
 }
 
 main .content-btn .btn-icon:hover,
@@ -233,7 +223,7 @@ main .content-btn .whatsapp:hover {
 main .content-btn button {
     opacity: 0;
     animation: slideYBottom 0.8s ease forwards;
-    animation-delay: calc(.4s * var(--i));
+    animation-delay: calc(.2s * var(--i));
 }
 
 main .content-btn .btn-icon i {
@@ -248,7 +238,7 @@ main .container-img img {
     z-index: -1;
     opacity: 0;
     animation: slideXLeft 1s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 
