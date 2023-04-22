@@ -23,7 +23,6 @@
 
 body {
     background-image: linear-gradient( to left, var(--color-3), var(--color-2));
-
 }
 
 header {
@@ -130,10 +129,11 @@ main .container-content {
     height: 500px;
     width: 500px;
     position: absolute;
-    right: -70px;
+    right: 70px;
     bottom: -70px;
     z-index: -100;
     opacity: .1;
+    display: none;
 }
 
 main .container-content 
@@ -286,7 +286,6 @@ main .container-img img {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 5px var(--color-2);
     margin: auto;
     opacity: 0;
     animation: slideYTop .8s ease forwards;
@@ -296,7 +295,8 @@ main .container-img img {
     max-width: 99%;
     padding: 30px;
     border-radius: 5px;
-    background: linear-gradient(to top, var(--color-2), var(--color-3));
+    box-shadow: 2px 2px 5px var(--color-2);
+    background: linear-gradient(to bottom, var(--color-3), var(--color-3), var(--color-2));
 }
 
 .about .about-text h1 {
@@ -313,7 +313,8 @@ main .container-img img {
 
 .about .about-text p span {
     font-size: 1.5rem;
-    color: var(--color-1);
+    color: var(--color-5);
+    font-weight: bold;
 }
 
 .about-img {
@@ -322,7 +323,7 @@ main .container-img img {
     height: 500px;
     position: absolute;
     bottom: -70px;
-    left: -70px;
+    left: -120px;
     opacity: .1;
 }
 
@@ -338,9 +339,9 @@ main .container-img img {
 
 
 .container-materials .materials .material {
-    width: 250px;
-    height: 250px;
-    margin: 15px;
+    width: 290px;
+    height: 290px;
+    margin: 20px;
     padding: 15px;
     box-shadow: 2px 2px 5px var(--color-1);
     background-color: var(--color-2);
@@ -461,9 +462,9 @@ main .container-img img {
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
-    height: 200px;
-    width: 200px;
-    margin: 15px;
+    height: 290px;
+    width: 290px;
+    margin: 20px;
     background-color: var(--color-2);
     box-shadow: 2px 2px 5px var(--color-2);
     border-radius: 5px;
@@ -476,8 +477,12 @@ main .container-img img {
     transform: scale(1.1);
 }
 
+.container-medias .media h2 {
+    font-size: 2rem;
+}
+
 .container-medias .media i {
-    font-size: 5.5rem;
+    font-size: 7.5rem;
 }
 
 
@@ -552,9 +557,14 @@ main .container-img img {
     .content-text h1 span {
         font-size: 2rem;
     }
+
+    .bg-logo {
+        display: block;
+    }
 }
 
 @media (min-width: 750px) {
+
     .show-toggle {
         display: none;
     }
@@ -562,6 +572,7 @@ main .container-img img {
     header .navbar {
         display: flex;
     }
+
 }
 
 @media (max-width: 750px) {
@@ -569,7 +580,6 @@ main .container-img img {
     header {
         display: flex;
         justify-content: space-between;
-        padding: 0 18px;
     }
 
     header .navbar {
