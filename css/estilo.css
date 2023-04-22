@@ -130,8 +130,8 @@ main .container-content {
     height: 500px;
     width: 500px;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -70px;
+    bottom: -70px;
     z-index: -100;
     opacity: .1;
 }
@@ -171,6 +171,7 @@ main .container-content
     opacity: 0;
     animation: slideXRight .7s ease forwards;
     animation-delay: .8s;
+    max-width: 600px;
 }
 
 main .content-btn {
@@ -179,6 +180,7 @@ main .content-btn {
     row-gap: 20px;
     margin-top: 20px;
     justify-items: center;
+    max-width: 600px;
 }
 
 main .content-btn .whatsapp {
@@ -212,12 +214,12 @@ main .content-btn .btn-icon {
     background-color: var(--color-2);
     box-shadow: -5px 4px 2px rgba(0, 0, 0, 0.301);
     cursor: pointer;
-    transition: 2.3s;
+    transition: .5s;
 }
 
 main .content-btn .btn-icon:hover,
 main .content-btn .whatsapp:hover {
-    background-color: var(--color-3);
+    background-color: var(--color-1);
 }
 
 main .content-btn button {
@@ -244,76 +246,7 @@ main .container-img img {
 
 
 
-/* about */
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 5px var(--color-2);
-    margin-top: 10px;
-    opacity: 0;
-    animation: slideYTop .8s ease forwards;
-}
-
-.about .about-text {
-    max-width: 99%;
-    padding: 30px;
-    border-radius: 5px;
-    background-color: var(--color-3);
-}
-
-.about .about-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.about .about-text p {
-    margin-bottom: 1rem;
-    text-indent: 40px;
-}
-
-.about .about-text p span {
-    font-size: 1.5rem;
-    color: var(--color-1);
-}
-
-.about-img {
-    background-image: url('../img/logoFWhite.png');
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    bottom: -250px;
-    opacity: .2;
-}
-
-
-/* btn close */
-
-.btn-close {
-    position: absolute;
-    right: 10%;
-}
-
-.btn-close button {
-    background-color: transparent;
-    border: 0 none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px;
-    transition: .5s;
-}
-
-.btn-close button:hover {
-    background-color: var(--color-1);
-}
-
-.btn-close button i {
-    font-size: 1.5rem;
-}
-
-
-
+/* mostrar navbar em dispositivos moveis */
 .show-toggle {
     background-color: #30074bcc;
     display: flex;
@@ -347,13 +280,104 @@ main .container-img img {
 }
 
 
-/* localizacao */
-.container-location {
+
+/* about */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px var(--color-2);
+    margin: auto;
     opacity: 0;
-    animation: slideYTop .5s ease forwards;
+    animation: slideYTop .8s ease forwards;
 }
 
-.container-location .location-text h1 {
+.about .about-text {
+    max-width: 99%;
+    padding: 30px;
+    border-radius: 5px;
+    background: linear-gradient(to top, var(--color-2), var(--color-3));
+}
+
+.about .about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about .about-text p {
+    margin-bottom: 1rem;
+    text-indent: 40px;
+    max-width: 800px;
+}
+
+.about .about-text p span {
+    font-size: 1.5rem;
+    color: var(--color-1);
+}
+
+.about-img {
+    background-image: url('../img/logoFWhite.png');
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: -70px;
+    left: -70px;
+    opacity: .1;
+}
+
+
+/* material */
+.container-materials .materials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+.container-materials .materials .material {
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px var(--color-1);
+    background-color: var(--color-2);
+    border-radius: 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container-materials .materials .material:hover {
+    background-color: var(--color-1);
+    transform: scale(1.1);
+}
+
+.container-materials .materials .material img {
+    width: 150px;
+    height: 150px;
+}
+
+.container-materials .materials .material h2 {
+    text-align: center;
+}
+
+
+/* localizacao */
+.container-location,
+.container-materials {
+    opacity: 0;
+    animation: slideYTop .5s ease forwards;
+    margin: auto;
+}
+
+.container-location .location-text h1,
+.container-materials h1 {
     text-align: center;
     font-size: 2.5rem;
     padding: 15px;
@@ -362,6 +386,7 @@ main .container-img img {
 .container-location .location-text p {
     margin-bottom: 1rem;
     text-indent: 40px;
+    max-width: 800px;
 }
 
 .container-location .location-text p span {
@@ -377,6 +402,34 @@ main .container-img img {
     right: 0;
     top: 50px;
     opacity: 0.2;
+    z-index: -1000;
+}
+
+.location-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-link a {
+    text-decoration: none;
+    padding: 15px;
+    background-color: white;
+    color: var(--color-1);
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: .5s;
+}
+
+.location-link a:hover {
+    transform: scale(1.1);
+}
+
+.location-link a i {
+    color: var(--color-1);
 }
 
 
