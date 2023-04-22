@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap');
 
@@ -122,19 +125,31 @@ main .container-content {
     justify-content: center;
 }
 
+.bg-logo {
+    background-image: url('../img/logoFWhite.png');
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    opacity: .1;
+}
+
 main .container-content 
 .content-text {
     text-align: center;
 }
 
-main .container-content 
+/* main .container-content 
 .content-text .name {
     font-size: 2.5rem;
+    margin-bottom: -10px;
     font-family: 'Great Vibes', cursive;
     opacity: 0;
     animation: slideXRight .8s ease forwards;
     animation-delay: 1.7s;
-}
+} */
 
 main .container-content 
 .content-text .name i {
@@ -144,18 +159,20 @@ main .container-content
 
 main .container-content 
 .content-text h1 {
-    font-size: 3.7rem;
+    margin-top: 20px;
+    color: var(--color-5);
+    font-family: 'Poppins', sans-serif;
     opacity: 0;
-    animation: slideXLeft .8s ease forwards;
+    animation: slideXRight .8s ease forwards;
     animation-delay: 1.5s;
 }
 
 main .container-content 
-.content-text h1 span {
-    color: var(--color-5);
-    font-size: 4rem;
-    font-family: 'Work Sans', sans-serif;
-    line-height: 50px;
+.content-text h2 {
+    font-size: 2rem;
+    opacity: 0;
+    animation: slideXLeft .8s ease forwards;
+    animation-delay: 1.5s;
 }
 
 main .container-content 
@@ -423,6 +440,9 @@ main .container-img img {
 
 .container-medias .img-logo-medias img {
     width: 350px;
+    margin: auto;
+    position: relative;
+    bottom: 20px;
 }
 
 
@@ -535,6 +555,10 @@ main .container-img img {
 
     main .container-content .content-text {
         text-align: center;
+    }
+
+    .container-medias .img-logo-medias img {
+        width: 95%;
     }
 }
 

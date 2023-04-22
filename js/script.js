@@ -21,7 +21,7 @@ about.forEach(e => {
 locationHere.onclick = a => {
     a.preventDefault()
 
-    fetch('../pages/location.html')
+    fetch('pages/location.html')
         .then(resp => resp.text())
         .then(page => main.innerHTML = page)
 }
@@ -29,7 +29,7 @@ locationHere.onclick = a => {
 medias.onclick = a => {
     a.preventDefault()
 
-    fetch('../pages/media.html')
+    fetch('pages/media.html')
         .then(resp => resp.text())
         .then(page => main.innerHTML = page)
 }
