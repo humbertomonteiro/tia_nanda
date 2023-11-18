@@ -1,6 +1,8 @@
 const navbar = document.querySelector("#navbar");
 const btnToggle = document.querySelector(".btn-toggle");
 
+const link = document.querySelectorAll(".link");
+
 btnToggle.onclick = () => {
   navbar.classList.toggle("navbar");
   navbar.classList.toggle("show-toggle");
@@ -15,6 +17,11 @@ function linkAjax(event, url) {
 
   closeOpenToggle();
 }
+
+link.forEach((e) => {
+  // e.onclick = alert("alo");
+  e.onclick = () => closeOpenToggle();
+});
 
 function closeOpenToggle() {
   const showOrHidden = navbar.classList.contains("navbar");

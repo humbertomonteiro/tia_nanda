@@ -22,6 +22,7 @@
 
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 header {
@@ -167,7 +168,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -191,10 +193,9 @@ main {
 
 .content-text span {
   display: block;
-  margin: 1rem 0;
+  margin: 1rem 0 0.5rem;
   font-size: 1.5rem;
   color: var(--color-1);
-  font-family: "Poppins", sans-serif;
   opacity: 0;
   animation: slideXRight 0.7s ease forwards;
   animation-delay: 0.8s;
@@ -316,7 +317,7 @@ main {
 /* about */
 
 #about {
-  height: 80px;
+  height: 100px;
 }
 
 .about {
@@ -327,12 +328,8 @@ main {
   opacity: 0;
   animation: slideYTop 0.8s ease forwards;
   max-width: 100%;
-  background: linear-gradient(
-    to bottom,
-    var(--color-3),
-    var(--color-3),
-    var(--color-2)
-  );
+  background: rgb(123, 33, 148);
+  background: linear-gradient(90deg, var(--color-3) 22%, var(--color-2) 100%);
   padding: 20px;
 }
 
@@ -371,7 +368,7 @@ main {
 /* localizacao */
 
 #location {
-  height: 80px;
+  height: 100px;
 }
 
 .location,
@@ -382,8 +379,8 @@ main {
   justify-content: space-around;
   opacity: 0;
   animation: slideYTop 0.5s ease forwards;
-  margin: auto;
   margin-left: 30px;
+  margin-bottom: 80px;
 }
 
 .location-address {
@@ -411,7 +408,7 @@ main {
 .location .location-text p {
   color: var(--color-1);
   margin-bottom: 1rem;
-  text-indent: 40px;
+  text-indent: 20px;
   max-width: 800px;
 }
 
@@ -524,6 +521,55 @@ main {
   margin: auto;
   position: relative;
   bottom: 20px;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-4);
+}
+
+.logo-footer {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.logo-footer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-footer div h3 {
+  color: var(--color-1);
+}
+
+.content-footer div ul {
+  list-style: none;
+  padding: 0.5rem 0 1rem;
+}
+
+.content-footer div ul li {
+  margin-bottom: 0.25rem;
+}
+
+.created {
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1080px) {
