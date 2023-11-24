@@ -20,6 +20,11 @@
   color: white;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #fff;
   width: 100%;
